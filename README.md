@@ -7,18 +7,15 @@ Send emails to nick.zhangyuan@gmail.com
 # Installation
 
 1. Clone the repository:   
-
-`git clone git@github.com:zhangy72/HMM-FRAME.git`  
+  `git clone git@github.com:zhangy72/HMM-FRAME.git`  
 
 2. g++ compiler is required in your Unix system. To install HMM-FRAME, run the Makeme file using the following command:  
-
-`make`
+  `make`
 
 # Run HMM-FRAME
 
 The installation will generate the bin file: hmmframe. To run hmmframe, use the following command:i  
-
-`./run_hmmframe.sh -m <HMMER3 hmm file> -s <nucleotide fasta file> -o <output file> [-e]`
+  `./run_hmmframe.sh -m <HMMER3 hmm file> -s <nucleotide fasta file> -o <output file> [-e]`
 
 The hmm file can contain multiple hmm models and should be in HMMER3.0's hmm file format. These files can be downloaded from Pfam ftp. The nucleotide sequence file should in be fasta format. The default reference model uses 0.0007 for non-homopolymer regions and 0.0044 for homopolymer regions. When the option "-e" is set, then the error model will shift to our self-trained model. For example, to run the fasta file test.fa, against nifH family model file nifH.hmm using the reference error model:  
 
@@ -30,13 +27,23 @@ The output of HMM-FRAME is in fasta format. It keeps the sequence name but adds 
 
 ```
 >GB4XUSJ05FQ71N
-CACCCGTCTGATGCTTCACTCCAAAGCTCAAACCACCGTACTACACTTAGCTGCTGAACGCGGTGCAGTAGAAGACTTAGAACTCCACGAAGTAATGTTGACCGGTTTCCGTGGCGTTAAGTGCGTAGAATCTGGTGGTCCAGAACCCGGTGTAGGTTGCGCCGGTCGTGGTATCATCACCGCCATTAACTTCTTAGAAGAAAACGGCGCTTTACCAAGACCTAGACTTCGTATCCTACGACGTATTGGGTGACGTTGTATGTGGTGGTTTCGCTATGCCTATCCGTGAAGGTAAAGCACAAGAAATCTACATCGTTACC
+CACCCGTCTGATGCTTCACTCCAAAGCTCAAACCACCGTACTACACTTAGCTGCTGAACG
+CGGTGCAGTAGAAGACTTAGAACTCCACGAAGTAATGTTGACCGGTTTCCGTGGCGTTAA
+GTGCGTAGAATCTGGTGGTCCAGAACCCGGTGTAGGTTGCGCCGGTCGTGGTATCATCAC
+CGCCATTAACTTCTTAGAAGAAAACGGCGCTTTACCAAGACCTAGACTTCGTATCCTACG
+ACGTATTGGGTGACGTTGTATGTGGTGGTTTCGCTATGCCTATCCGTGAAGGTAAAGCAC
+AAGAAATCTACATCGTTACC
 ```
 
 The output of HMM-FRAME is:  
 ```
 >GB4XUSJ05FQ71N hmm_name=nifH score=216.586 error_num=1 seq_insertion_pos=211, seq_deletion_pos= state_insertion_pos=116, state_deletion_pos=
-ACCCGTCTGATGCTTCACTCCAAAGCTCAAACCACCGTACTACACTTAGCTGCTGAACGCGGTGCAGTAGAAGACTTAGAACTCCACGAAGTAATGTTGACCGGTTTCCGTGGCGTTAAGTGCGTAGAATCTGGTGGTCCAGAACCCGGTGTAGGTTGCGCCGGTCGTGGTATCATCACCGCCATTAACTTCTTAGAAGAAAACGGCGCTTACCAAGACCTAGACTTCGTATCCTACGACGTATTGGGTGACGTTGTATGTGGTGGTTTCGCTATGCCTATCCGTGAAGGTAAAGCACAAGAAATCTACATCGTTACC
+ACCCGTCTGATGCTTCACTCCAAAGCTCAAACCACCGTACTACACTTAGCTGCTGAACGC
+GGTGCAGTAGAAGACTTAGAACTCCACGAAGTAATGTTGACCGGTTTCCGTGGCGTTAAG
+TGCGTAGAATCTGGTGGTCCAGAACCCGGTGTAGGTTGCGCCGGTCGTGGTATCATCACC
+GCCATTAACTTCTTAGAAGAAAACGGCGCTTACCAAGACCTAGACTTCGTATCCTACGAC
+GTATTGGGTGACGTTGTATGTGGTGGTTTCGCTATGCCTATCCGTGAAGGTAAAGCACAA
+GAAATCTACATCGTTACC
 ```
 The sequence name is GB4XUSJ05FQ71N. The query hmm family is nifH family. The alignment score is 216.586 bits. There is one insertion error.
 
@@ -49,5 +56,6 @@ HMM-FRAME can be referenced as:
 # License
 
 Copyright (C) 2014 Yuan Zhang, Yanni Sun.  
+
 You may redistribute this software under the terms of GNU GENERAL PUBLIC LICENSE.
 
