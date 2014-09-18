@@ -50,7 +50,7 @@ GAAATCTACATCGTTACC
 ```
 The sequence name is GB4XUSJ05FQ71N. The query hmm family is nifH family. The alignment score is 216.586 bits. There is one insertion error.
 
-# Referencing HMM-FRAME
+# Reference HMM-FRAME
 
 HMM-FRAME can be referenced as: 
  
