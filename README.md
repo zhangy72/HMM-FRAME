@@ -1,20 +1,23 @@
 # Version
 
-This software was last updated 7/24/2014. Questions, comments, suggestions, etc?    
+This software was last updated 9/17/2014. Questions, comments, suggestions, etc?    
 
 Send emails to nick.zhangyuan@gmail.com  
 
 # Installation
 
 1. Clone the repository:   
+
   `git clone git@github.com:zhangy72/HMM-FRAME.git`  
 
 2. g++ compiler is required in your Unix system. To install HMM-FRAME, run the Makeme file using the following command:  
+
   `make`
 
 # Run HMM-FRAME
 
 The installation will generate the bin file: hmmframe. To run hmmframe, use the following command:i  
+
   `./run_hmmframe.sh -m <HMMER3 hmm file> -s <nucleotide fasta file> -o <output file> [-e]`
 
 The hmm file can contain multiple hmm models and should be in HMMER3.0's hmm file format. These files can be downloaded from Pfam ftp. The nucleotide sequence file should in be fasta format. The default reference model uses 0.0007 for non-homopolymer regions and 0.0044 for homopolymer regions. When the option "-e" is set, then the error model will shift to our self-trained model. For example, to run the fasta file test.fa, against nifH family model file nifH.hmm using the reference error model:  
