@@ -58,7 +58,7 @@ HMM-FRAME can be referenced as:
 
 # License
 
-Copyright (C) 2014 Yuan Zhang, Yanni Sun.  
+Copyright (C), 2014 Yuan Zhang, Yanni Sun.  
 
 You may redistribute this software under the terms of GNU GENERAL PUBLIC LICENSE.
 
