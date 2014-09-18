@@ -16,7 +16,7 @@ Send emails to nick.zhangyuan@gmail.com
 
 # Run HMM-FRAME
 
-The installation will generate the bin file: hmmframe. To run hmmframe, use the following command:i  
+The installation will generate the bin file: hmmframe. To run hmmframe, use the following command:  
 
   `./run_hmmframe.sh -m <HMMER3 hmm file> -s <nucleotide fasta file> -o <output file> [-e]`
 
